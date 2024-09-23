@@ -715,6 +715,11 @@ video {
   clear: none;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -1354,6 +1359,18 @@ video {
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .space-y-reverse > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 1;
 }
@@ -1918,6 +1935,11 @@ video {
   padding-right: 1.25rem;
 }
 
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1976,6 +1998,10 @@ video {
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .uppercase {
@@ -2424,6 +2450,328 @@ video {
 
 .forced-color-adjust-none {
   forced-color-adjust: none;
+}
+
+@font-face {
+  font-family: iransansx;
+
+  font-style: normal;
+
+  font-weight: 100;
+
+  src: url(fonts/IRANSansX-Thin.woff2) format("woff2"),url(fonts/IRANSansX-Thin.woff) format("woff");
+
+  font-display: swap
+}
+
+@font-face {
+  font-family: iransansx;
+
+  font-style: normal;
+
+  font-weight: 200;
+
+  src: url(fonts/IRANSansX-UltraLight.woff2) format("woff2"),url(fonts/IRANSansX-UltraLight.woff) format("woff");
+
+  font-display: swap
+}
+
+@font-face {
+  font-family: iransansx;
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  src: url(fonts/IRANSansX-Light.woff2) format("woff2"),url(fonts/IRANSansX-Light.woff) format("woff");
+
+  font-display: swap
+}
+
+@font-face {
+  font-family: iransansx;
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  src: url(fonts/IRANSansX-Medium.woff2) format("woff2"),url(fonts/IRANSansX-Medium.woff) format("woff");
+
+  font-display: swap
+}
+
+@font-face {
+  font-family: iransansx;
+
+  font-style: normal;
+
+  font-weight: 600;
+
+  src: url(fonts/IRANSansX-DemiBold.woff2) format("woff2"),url(fonts/IRANSansX-DemiBold.woff) format("woff");
+
+  font-display: swap
+}
+
+@font-face {
+  font-family: iransansx;
+
+  font-style: normal;
+
+  font-weight: 800;
+
+  src: url(fonts/IRANSansX-ExtraBold.woff2) format("woff2"),url(fonts/IRANSansX-ExtraBold.woff) format("woff");
+
+  font-display: swap
+}
+
+@font-face {
+  font-family: iransansx;
+
+  font-style: normal;
+
+  font-weight: 900;
+
+  src: url(fonts/IRANSansX-Black.woff2) format("woff2"),url(fonts/IRANSansX-Black.woff) format("woff");
+
+  font-display: swap
+}
+
+@font-face {
+  font-family: iransansx;
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  src: url(fonts/IRANSansX-Bold.woff2) format("woff2"),url(fonts/IRANSansX-Bold.woff) format("woff");
+
+  font-display: swap
+}
+
+@font-face {
+  font-family: iransansx;
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  src: url(fonts/IRANSansX-Regular.woff2) format("woff2"),url(fonts/IRANSansX-Regular.woff) format("woff");
+
+  font-display: swap
+}
+
+@font-face {
+  font-family: Shabnam;
+
+  src: url('fonts/Shabnam.eot');
+
+  src: url('fonts/Shabnam.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Shabnam.woff2') format('woff2'),
+         url('fonts/Shabnam.woff') format('woff'),
+         url('fonts/Shabnam.ttf') format('truetype');
+
+  font-weight: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Shabnam;
+
+  src: url('fonts/Shabnam-Bold.eot');
+
+  src: url('fonts/Shabnam-Bold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Shabnam-Bold.woff2') format('woff2'),
+         url('fonts/Shabnam-Bold.woff') format('woff'),
+         url('fonts/Shabnam-Bold.ttf') format('truetype');
+
+  font-weight: bold;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Shabnam;
+
+  src: url('fonts/Shabnam-Thin.eot');
+
+  src: url('fonts/Shabnam-Thin.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Shabnam-Thin.woff2') format('woff2'),
+         url('fonts/Shabnam-Thin.woff') format('woff'),
+         url('fonts/Shabnam-Thin.ttf') format('truetype');
+
+  font-weight: 100;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Shabnam;
+
+  src: url('fonts/Shabnam-Light.eot');
+
+  src: url('fonts/Shabnam-Light.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Shabnam-Light.woff2') format('woff2'),
+         url('fonts/Shabnam-Light.woff') format('woff'),
+         url('fonts/Shabnam-Light.ttf') format('truetype');
+
+  font-weight: 300;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Shabnam;
+
+  src: url('fonts/Shabnam-Medium.eot');
+
+  src: url('fonts/Shabnam-Medium.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Shabnam-Medium.woff2') format('woff2'),
+         url('fonts/Shabnam-Medium.woff') format('woff'),
+         url('fonts/Shabnam-Medium.ttf') format('truetype');
+
+  font-weight: 500;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazirmatn';
+
+  font-style: normal;
+
+  font-weight: 100;
+
+  src: url("fonts/vazir/Vazirmatn-Thin.woff2") format("woff2"),
+         url("fonts/vazir/Vazirmatn-Thin.woff") format("woff"),
+         url("fonts/vazir/Vazirmatn-Thin.ttf") format("truetype");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazirmatn';
+
+  font-style: normal;
+
+  font-weight: 200;
+
+  src: url("fonts/vazir/Vazirmatn-ExtraLight.woff2") format("woff2"),
+         url("fonts/vazir/Vazirmatn-ExtraLight.woff") format("woff"),
+         url("fonts/vazir/Vazirmatn-ExtraLight.ttf") format("truetype");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazirmatn';
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  src: url("fonts/vazir/Vazirmatn-Light.woff2") format("woff2"),
+         url("fonts/vazir/Vazirmatn-Light.woff") format("woff"),
+         url("fonts/vazir/Vazirmatn-Light.ttf") format("truetype");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazirmatn';
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  src: url("fonts/vazir/Vazirmatn-Regular.woff2") format("woff2"),
+         url("fonts/vazir/Vazirmatn-Regular.woff") format("woff"),
+         url("fonts/vazir/Vazirmatn-Regular.ttf") format("truetype");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazirmatn';
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  src: url("fonts/vazir/Vazirmatn-Medium.woff2") format("woff2"),
+         url("fonts/vazir/Vazirmatn-Medium.woff") format("woff"),
+         url("fonts/vazir/Vazirmatn-Medium.ttf") format("truetype");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazirmatn';
+
+  font-style: normal;
+
+  font-weight: 600;
+
+  src: url("fonts/vazir/Vazirmatn-SemiBold.woff2") format("woff2"),
+         url("fonts/vazir/Vazirmatn-SemiBold.woff") format("woff"),
+         url("fonts/vazir/Vazirmatn-SemiBold.ttf") format("truetype");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazirmatn';
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  src: url("fonts/vazir/Vazirmatn-Bold.woff2") format("woff2"),
+         url("fonts/vazir/Vazirmatn-Bold.woff") format("woff"),
+         url("fonts/vazir/Vazirmatn-Bold.ttf") format("truetype");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazirmatn';
+
+  font-style: normal;
+
+  font-weight: 800;
+
+  src: url("fonts/vazir/Vazirmatn-ExtraBold.woff2") format("woff2"),
+         url("fonts/vazir/Vazirmatn-ExtraBold.woff") format("woff"),
+         url("fonts/vazir/Vazirmatn-ExtraBold.ttf") format("truetype");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazirmatn';
+
+  font-style: normal;
+
+  font-weight: 900;
+
+  src: url("fonts/vazir/Vazirmatn-Black.woff2") format("woff2"),
+         url("fonts/vazir/Vazirmatn-Black.woff") format("woff"),
+         url("fonts/vazir/Vazirmatn-Black.ttf") format("truetype");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'faNum';
+
+  src: url('fonts/vazir/Vazir-FD.ttf.woff') format('woff'),
+         url('fonts/vazir/Vazir-FD.ttf.svg#Vazir-FD') format('svg'),
+         url('fonts/vazir/Vazir-FD.ttf.eot'),
+         url('fonts/vazir/Vazir-FD.ttf.eot?#iefix') format('embedded-opentype');
+
+  font-weight: normal;
+
+  font-style: normal;
 }
 
 @media (min-width: 640px) {
